@@ -1,6 +1,6 @@
 # 生成地址：v2rayse.com
 # 模版名称：ACL4SSR.ini
-# 生成时间：2024-12-17 21:08:43
+# 生成时间：2024-12-17 21:11:51
 # 不要随意改变关键字，否则会导致出错
 # acl4SSR规则
 # 去广告：支持
@@ -58,6 +58,28 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
+  - name: 🇺🇸_US_美国_1
+    port: 80
+    server: 151.101.194.133
+    type: vless
+    network: ws
+    udp: true
+    ws-opts:
+      path: /Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN?ed=2048
+      headers:
+        host: snappfood.com
+    uuid: 622c783c-4bb6-4a92-a10c-549cd793fd2f
+  - name: 🇺🇸_US_美国_2
+    port: 80
+    server: 151.101.66.168
+    type: vless
+    network: ws
+    udp: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: het5h2.moi
+    uuid: 531caad7-3533-405d-af03-7c01c3afdf32
   - name: 🇷🇺_RU_俄罗斯_1
     port: 9042
     server: 217.30.10.18
@@ -93,6 +115,27 @@ proxies:
     udp: true
     password: fMcrsQuZhCNiHBmXT80AhQ3mPK5alh/iLuDz4pILlYU=
     cipher: chacha20-ietf-poly1305
+  - name: 🇺🇸_US_美国->🇺🇦_UA_乌克兰_1
+    port: 80
+    server: 151.101.194.168
+    type: vless
+    network: ws
+    udp: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: het5h2.moi
+    uuid: 531caad7-3533-405d-af03-7c01c3afdf32
+  - name: 🇺🇸_US_美国_4
+    port: 80
+    server: speedtest.net
+    type: vless
+    network: ws
+    udp: true
+    ws-opts:
+      headers:
+        host: MO-SI-V2.COM
+    uuid: ced63688-30a1-50b9-8f3b-b8d3f834abc0
   - name: 🇷🇺_RU_俄罗斯_3
     port: 9041
     server: 217.30.10.18
@@ -128,6 +171,17 @@ proxies:
     udp: true
     password: FAdUvMJUq5vDgKEq
     cipher: aes-256-cfb
+  - name: 🇺🇸_US_美国->🇺🇦_UA_乌克兰_2
+    port: 80
+    server: 151.101.2.168
+    type: vless
+    network: ws
+    udp: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: het5h2.moi
+    uuid: 531caad7-3533-405d-af03-7c01c3afdf32
   - name: 🇷🇺_RU_俄罗斯_5
     port: 9037
     server: 217.30.10.18
@@ -178,6 +232,17 @@ proxies:
     udp: true
     password: 9XwYyZsK8SNzQDtY
     cipher: aes-256-cfb
+  - name: 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
+    port: 80
+    server: 151.101.66.187
+    type: vless
+    network: ws
+    udp: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: htz7h3.moi
+    uuid: 2d8497b5-23dd-46de-b654-717452302700
   - name: 🇷🇺_RU_俄罗斯_11
     port: 9003
     server: 217.30.10.18
@@ -185,6 +250,16 @@ proxies:
     udp: true
     password: JdmRK9gMEqFgs8nP
     cipher: aes-256-cfb
+  - name: 🇺🇸_US_美国->🇺🇦_UA_乌克兰_3
+    port: 80
+    server: 151.101.1.6
+    type: vless
+    network: ws
+    udp: true
+    ws-opts:
+      headers:
+        host: PABLOO-MOSTAFA.COM
+    uuid: d85346a9-ba7b-5c83-8c84-c3d54e42e9d1
   - name: 🇷🇺_RU_俄罗斯_12
     port: 9056
     server: 217.30.10.18
@@ -206,6 +281,17 @@ proxies:
     udp: true
     password: BNmAXXxAHYpTRdzu
     cipher: aes-256-cfb
+  - name: 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
+    port: 80
+    server: 151.101.2.187
+    type: vless
+    network: ws
+    udp: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: htz7h3.moi
+    uuid: 2d8497b5-23dd-46de-b654-717452302700
   - name: 🇷🇺_RU_俄罗斯_14
     port: 9040
     server: 217.30.10.18
@@ -213,6 +299,40 @@ proxies:
     udp: true
     password: p9z5BVADH2YFs3MN
     cipher: aes-256-cfb
+  - name: 🇺🇸_US_美国_9
+    port: 80
+    server: 151.101.0.155
+    type: vless
+    network: ws
+    udp: true
+    ws-opts:
+      path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=80
+      headers:
+        host: 6.fidsxss6x.iR
+    uuid: 9a6d81c6-1f02-4928-ab1b-7bbf19a5ae75
+  - name: 🇺🇸_US_美国->🇩🇪_DE_德国
+    port: 80
+    server: 151.101.64.155
+    type: vless
+    network: ws
+    udp: true
+    servername: iranvpn.com.
+    ws-opts:
+      path: /?ed=1024
+      headers:
+        host: iranvpn.com.
+    uuid: 64ccb313-d2bd-4b44-a6fd-522a14c819fd
+  - name: 🇺🇸_US_美国_10
+    port: 80
+    server: 151.101.130.168
+    type: vless
+    network: ws
+    udp: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: het5h2.moi
+    uuid: 531caad7-3533-405d-af03-7c01c3afdf32
   - name: 🇱🇻_LV_拉脱维亚
     port: 990
     server: 46.183.217.232
@@ -226,16 +346,21 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
       - 🇷🇺_RU_俄罗斯_1
       - 🇮🇷_IR_伊朗->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
       - 🇨🇭_CH_瑞士->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_1
+      - 🇺🇸_US_美国_4
       - 🇷🇺_RU_俄罗斯_3
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_2
       - 🇷🇺_RU_俄罗斯_5
       - 🇺🇸_US_美国_8
       - 🇷🇺_RU_俄罗斯_6
@@ -243,11 +368,17 @@ proxy-groups:
       - 🇷🇺_RU_俄罗斯_8
       - 🇷🇺_RU_俄罗斯_9
       - 🇷🇺_RU_俄罗斯_10
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯_11
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_3
       - 🇷🇺_RU_俄罗斯_12
       - 🇸🇬_SG_新加坡
       - 🇷🇺_RU_俄罗斯_13
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
       - 🇷🇺_RU_俄罗斯_14
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国_10
       - 🇱🇻_LV_拉脱维亚
   - name: ♻️ 自动选择
     type: url-test
@@ -255,16 +386,21 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
       - 🇷🇺_RU_俄罗斯_1
       - 🇮🇷_IR_伊朗->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
       - 🇨🇭_CH_瑞士->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_1
+      - 🇺🇸_US_美国_4
       - 🇷🇺_RU_俄罗斯_3
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_2
       - 🇷🇺_RU_俄罗斯_5
       - 🇺🇸_US_美国_8
       - 🇷🇺_RU_俄罗斯_6
@@ -272,11 +408,17 @@ proxy-groups:
       - 🇷🇺_RU_俄罗斯_8
       - 🇷🇺_RU_俄罗斯_9
       - 🇷🇺_RU_俄罗斯_10
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯_11
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_3
       - 🇷🇺_RU_俄罗斯_12
       - 🇸🇬_SG_新加坡
       - 🇷🇺_RU_俄罗斯_13
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
       - 🇷🇺_RU_俄罗斯_14
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国_10
       - 🇱🇻_LV_拉脱维亚
   - name: 🌍 国外媒体
     type: select
@@ -284,16 +426,21 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
       - 🇷🇺_RU_俄罗斯_1
       - 🇮🇷_IR_伊朗->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
       - 🇨🇭_CH_瑞士->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_1
+      - 🇺🇸_US_美国_4
       - 🇷🇺_RU_俄罗斯_3
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_2
       - 🇷🇺_RU_俄罗斯_5
       - 🇺🇸_US_美国_8
       - 🇷🇺_RU_俄罗斯_6
@@ -301,27 +448,38 @@ proxy-groups:
       - 🇷🇺_RU_俄罗斯_8
       - 🇷🇺_RU_俄罗斯_9
       - 🇷🇺_RU_俄罗斯_10
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯_11
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_3
       - 🇷🇺_RU_俄罗斯_12
       - 🇸🇬_SG_新加坡
       - 🇷🇺_RU_俄罗斯_13
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
       - 🇷🇺_RU_俄罗斯_14
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国_10
       - 🇱🇻_LV_拉脱维亚
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
       - 🇷🇺_RU_俄罗斯_1
       - 🇮🇷_IR_伊朗->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
       - 🇨🇭_CH_瑞士->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_1
+      - 🇺🇸_US_美国_4
       - 🇷🇺_RU_俄罗斯_3
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_2
       - 🇷🇺_RU_俄罗斯_5
       - 🇺🇸_US_美国_8
       - 🇷🇺_RU_俄罗斯_6
@@ -329,27 +487,38 @@ proxy-groups:
       - 🇷🇺_RU_俄罗斯_8
       - 🇷🇺_RU_俄罗斯_9
       - 🇷🇺_RU_俄罗斯_10
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯_11
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_3
       - 🇷🇺_RU_俄罗斯_12
       - 🇸🇬_SG_新加坡
       - 🇷🇺_RU_俄罗斯_13
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
       - 🇷🇺_RU_俄罗斯_14
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国_10
       - 🇱🇻_LV_拉脱维亚
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
       - 🇷🇺_RU_俄罗斯_1
       - 🇮🇷_IR_伊朗->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
       - 🇨🇭_CH_瑞士->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_1
+      - 🇺🇸_US_美国_4
       - 🇷🇺_RU_俄罗斯_3
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_2
       - 🇷🇺_RU_俄罗斯_5
       - 🇺🇸_US_美国_8
       - 🇷🇺_RU_俄罗斯_6
@@ -357,27 +526,38 @@ proxy-groups:
       - 🇷🇺_RU_俄罗斯_8
       - 🇷🇺_RU_俄罗斯_9
       - 🇷🇺_RU_俄罗斯_10
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯_11
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_3
       - 🇷🇺_RU_俄罗斯_12
       - 🇸🇬_SG_新加坡
       - 🇷🇺_RU_俄罗斯_13
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
       - 🇷🇺_RU_俄罗斯_14
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国_10
       - 🇱🇻_LV_拉脱维亚
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
       - 🇷🇺_RU_俄罗斯_1
       - 🇮🇷_IR_伊朗->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
       - 🇨🇭_CH_瑞士->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_1
+      - 🇺🇸_US_美国_4
       - 🇷🇺_RU_俄罗斯_3
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_2
       - 🇷🇺_RU_俄罗斯_5
       - 🇺🇸_US_美国_8
       - 🇷🇺_RU_俄罗斯_6
@@ -385,11 +565,17 @@ proxy-groups:
       - 🇷🇺_RU_俄罗斯_8
       - 🇷🇺_RU_俄罗斯_9
       - 🇷🇺_RU_俄罗斯_10
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯_11
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_3
       - 🇷🇺_RU_俄罗斯_12
       - 🇸🇬_SG_新加坡
       - 🇷🇺_RU_俄罗斯_13
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
       - 🇷🇺_RU_俄罗斯_14
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国_10
       - 🇱🇻_LV_拉脱维亚
   - name: 🎯 全球直连
     type: select
@@ -413,16 +599,21 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
       - 🇷🇺_RU_俄罗斯_1
       - 🇮🇷_IR_伊朗->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
       - 🇨🇭_CH_瑞士->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_1
+      - 🇺🇸_US_美国_4
       - 🇷🇺_RU_俄罗斯_3
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_2
       - 🇷🇺_RU_俄罗斯_5
       - 🇺🇸_US_美国_8
       - 🇷🇺_RU_俄罗斯_6
@@ -430,11 +621,17 @@ proxy-groups:
       - 🇷🇺_RU_俄罗斯_8
       - 🇷🇺_RU_俄罗斯_9
       - 🇷🇺_RU_俄罗斯_10
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯_11
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰_3
       - 🇷🇺_RU_俄罗斯_12
       - 🇸🇬_SG_新加坡
       - 🇷🇺_RU_俄罗斯_13
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
       - 🇷🇺_RU_俄罗斯_14
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国_10
       - 🇱🇻_LV_拉脱维亚
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
