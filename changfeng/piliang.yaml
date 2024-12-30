@@ -1,6 +1,6 @@
 # 生成地址：v2rayse.com
-# 模版名称：defaultName
-# 生成时间：2024-12-29 20:44:46
+# 模版名称：ACL4SSR.ini
+# 生成时间：2024-12-30 10:22:59
 # 不要随意改变关键字，否则会导致出错
 # acl4SSR规则
 # 去广告：支持
@@ -58,118 +58,148 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: 🇷🇺_RU_俄罗斯_1
-    port: 9001
-    server: 217.30.10.18
-    type: ss
-    udp: true
-    password: UkXRsXvR6buDMG2Y
-    cipher: aes-256-cfb
-  - name: 🇷🇺_RU_俄罗斯_2
-    port: 9038
-    server: 217.30.10.18
-    type: ss
-    udp: true
-    password: gYCYXfkUQEs2TaJQ
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_1
-    port: 80
-    server: speedtest.net
+  - name: 🇳🇱_NL_荷兰_1
+    port: 2198
+    server: 45.144.29.246
     type: vless
-    network: ws
+    network: tcp
     udp: true
-    ws-opts:
-      headers:
-        host: MOSIV2-0.IR.
-    uuid: 28db3a7c-637f-5b29-85c9-cce3cd1873c1
-  - name: 🇺🇸_US_美国->🇷🇴_RO_罗马尼亚
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  - name: 🇺🇸_US_美国_1
+    port: 2198
+    server: 171.22.125.182
+    type: vless
+    network: tcp
+    udp: true
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  - name: 未知
+    port: 2198
+    server: 185.234.247.205
+    type: vless
+    network: tcp
+    udp: true
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  - name: 🇷🇺_RU_俄罗斯_1
+    port: 2198
+    server: 185.236.233.55
+    type: vless
+    network: tcp
+    udp: true
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  - name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+    port: 8388
+    server: 137.175.113.215
+    type: ss
+    udp: true
+    password: asd123456
+    cipher: chacha20-ietf
+  - name: 🇷🇺_RU_俄罗斯_2
+    port: 2198
+    server: 185.236.233.136
+    type: vless
+    network: tcp
+    udp: true
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  - name: 🇷🇺_RU_俄罗斯_3
+    port: 9011
+    server: 217.30.10.18
+    type: ss
+    udp: true
+    password: M3t2ZEQcMGRWBjRa
+    cipher: aes-256-cfb
+  - name: 🇱🇹_LT_立陶宛
+    port: 2198
+    server: 94.232.244.5
+    type: vless
+    network: tcp
+    udp: true
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  - name: 🇳🇱_NL_荷兰_2
+    port: 2198
+    server: 188.119.112.18
+    type: vless
+    network: tcp
+    udp: true
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  - name: 🇷🇺_RU_俄罗斯_4
+    port: 2198
+    server: 91.225.219.118
+    type: vless
+    network: tcp
+    udp: true
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  - name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
+    port: 443
+    server: 54.245.207.144
+    type: ss
+    udp: true
+    password: amazonskr05
+    cipher: aes-256-cfb
+  - name: 🇷🇺_RU_俄罗斯_5
+    port: 9031
+    server: 217.30.10.18
+    type: ss
+    udp: true
+    password: BwcAUZk8hUFAkDGN
+    cipher: aes-256-cfb
+  - name: 🇺🇸_US_美国_2
+    port: 2198
+    server: 94.131.106.53
+    type: vless
+    network: tcp
+    udp: true
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  - name: 🇺🇸_US_美国_3
     port: 443
     server: 54.200.223.152
     type: ss
     udp: true
     password: amazonskr05
     cipher: aes-256-cfb
-  - name: 🇷🇺_RU_俄罗斯_3
+  - name: 🇮🇷_IR_伊朗->🇹🇷_TR_土耳其
+    port: 1935
+    server: 85.133.241.75
+    type: ss
+    udp: true
+    password: 21586aab-3a37-4f55-b8b7-5ae69572d403
+    cipher: chacha20-ietf-poly1305
+  - name: 🇳🇱_NL_荷兰_3
+    port: 2198
+    server: 188.119.112.3
+    type: vless
+    network: tcp
+    udp: true
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  - name: 🇷🇺_RU_俄罗斯_6
+    port: 9025
+    server: 217.30.10.18
+    type: ss
+    udp: true
+    password: XPtzA9sCug3SPR4c
+    cipher: aes-256-cfb
+  - name: 🇺🇸_US_美国_4
+    port: 2198
+    server: 171.22.124.176
+    type: vless
+    network: tcp
+    udp: true
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  - name: 🇺🇸_US_美国->🇨🇳_CN_中国
+    port: 48712
+    server: 107.148.207.249
+    type: vmess
+    network: tcp
+    udp: true
+    cipher: auto
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+  - name: 🇷🇺_RU_俄罗斯_7
     port: 9041
     server: 217.30.10.18
     type: ss
     udp: true
     password: U6qnYRhfyDmn8sgn
     cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_2
-    port: 8080
-    server: 79.110.53.169
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 🇸🇬_SG_新加坡
-    port: 443
-    server: 3.1.81.221
-    type: ss
-    udp: true
-    password: amazonskr05
-    cipher: aes-256-cfb
-  - name: 🇷🇺_RU_俄罗斯_4
-    port: 9059
-    server: 217.30.10.18
-    type: ss
-    udp: true
-    password: 9XwYyZsK8SNzQDtY
-    cipher: aes-256-cfb
-  - name: 🇷🇺_RU_俄罗斯_5
-    port: 9037
-    server: 217.30.10.18
-    type: ss
-    udp: true
-    password: TN2YqghxeFDKZfLU
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_3
-    port: 80
-    server: 151.101.130.228
-    type: vless
-    network: ws
-    udp: true
-    ws-opts:
-      headers:
-        host: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v01.drlimit.net
-    uuid: abfccb05-adf7-4ff5-87d9-ac4472e9bf02
-  - name: 🇦🇱_AL_阿尔巴尼亚
-    port: 5555
-    server: 109.104.154.4
-    type: ss
-    udp: true
-    password: 2kZMZNoI2sgKPb6C-9IQ8w
-    cipher: chacha20-ietf-poly1305
-  - name: 🇺🇸_US_美国_4
-    port: 443
-    server: 34.213.242.165
-    type: ss
-    udp: true
-    password: amazonskr05
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国->🇩🇪_DE_德国_1
-    port: 80
-    server: 151.101.194.165
-    type: vless
-    network: ws
-    udp: true
-    ws-opts:
-      path: /@PROXY_MTM---@PROXY_MTM---@PROXY_MTM---PROXY_MTM---PROXY_MTM---PROXY_MTM---@PROXY_MTM---@PROXY_MTM---PROXY_MTM---PROXY_MTM---@PROXY_MTM---@PROXY_MTM---PROXY_MTM---PROXY_MTM---@PROXY_MTM---@PROXY_MTM---@PROXY_MTM---@PROXY_MTM---@PROXY_MTM---@PROXY_MTM---PROXY_MTM---PROXY_MTM---@PROXY_MTM---@PROXY_MTM---@PROXY_MTM---PROXY_MTM---PROXY_MTM---@PROXY_MTM---@PROXY_MTM?ed=2048
-      headers:
-        host: mmd.ir
-    uuid: b9c3157a-0461-4436-a8b3-be35e963132e
-  - name: 🇺🇸_US_美国->🇩🇪_DE_德国_2
-    port: 80
-    server: 151.101.2.216
-    type: vless
-    network: ws
-    udp: true
-    ws-opts:
-      path: /@PROXY_MTM---@PROXY_MTM---@PROXY_MTM---PROXY_MTM---PROXY_MTM---PROXY_MTM---@PROXY_MTM---@PROXY_MTM---PROXY_MTM---PROXY_MTM---@PROXY_MTM---@PROXY_MTM---PROXY_MTM---PROXY_MTM---@PROXY_MTM---@PROXY_MTM---@PROXY_MTM---@PROXY_MTM---@PROXY_MTM---@PROXY_MTM---PROXY_MTM---PROXY_MTM---@PROXY_MTM---@PROXY_MTM---@PROXY_MTM---PROXY_MTM---PROXY_MTM---@PROXY_MTM---@PROXY_MTM?ed=2048
-      headers:
-        host: mmd.ir
-    uuid: b9c3157a-0461-4436-a8b3-be35e963132e
   - name: 🇹🇷_TR_土耳其
     port: 989
     server: 185.123.101.241
@@ -177,285 +207,217 @@ proxies:
     udp: true
     password: f8f7aCzcPKbsF8p3
     cipher: aes-256-cfb
-  - name: 🇷🇺_RU_俄罗斯_6
-    port: 9011
-    server: 217.30.10.18
-    type: ss
-    udp: true
-    password: M3t2ZEQcMGRWBjRa
-    cipher: aes-256-cfb
   - name: 🇺🇸_US_美国_5
     port: 443
-    server: 35.85.33.177
+    server: 34.222.136.128
     type: ss
     udp: true
     password: amazonskr05
-    cipher: aes-256-cfb
-  - name: 🇷🇺_RU_俄罗斯_7
-    port: 9024
-    server: 217.30.10.18
-    type: ss
-    udp: true
-    password: BejrQvtu9sqUeNuZ
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-    port: 8080
-    server: 169.150.210.233
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 🇷🇺_RU_俄罗斯_8
-    port: 9031
-    server: 217.30.10.18
-    type: ss
-    udp: true
-    password: BwcAUZk8hUFAkDGN
     cipher: aes-256-cfb
   - name: 🇺🇸_US_美国_6
-    port: 443
-    server: 54.245.207.144
-    type: ss
+    port: 2198
+    server: 171.22.125.185
+    type: vless
+    network: tcp
     udp: true
-    password: amazonskr05
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国->🇯🇵_JP_日本
-    port: 443
-    server: 34.211.229.86
-    type: ss
-    udp: true
-    password: amazonskr05
-    cipher: aes-256-cfb
-  - name: 🇷🇺_RU_俄罗斯_9
-    port: 9019
-    server: 217.30.10.18
-    type: ss
-    udp: true
-    password: GA9KzeEgvfxNrgmM
-    cipher: aes-256-cfb
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
   - name: 🇺🇸_US_美国_7
-    port: 443
-    server: 35.90.2.104
-    type: ss
+    port: 2198
+    server: 85.209.153.103
+    type: vless
+    network: tcp
     udp: true
-    password: amazonskr05
-    cipher: aes-256-cfb
-  - name: 🇷🇺_RU_俄罗斯_10
-    port: 9010
-    server: 217.30.10.18
-    type: ss
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  - name: 🇷🇺_RU_俄罗斯_8
+    port: 2198
+    server: 77.91.122.79
+    type: vless
+    network: tcp
     udp: true
-    password: f63gg8EruDnUrmz4
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_8
-    port: 443
-    server: 34.213.200.250
-    type: ss
-    udp: true
-    password: amazonskr05
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_9
-    port: 443
-    server: series-a2-me.varzesh360.co
-    type: ss
-    udp: true
-    password: Bog0ELmMM9DSxDdQ
-    cipher: chacha20-ietf-poly1305
+    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇷🇺_RU_俄罗斯_2
+      - 🇳🇱_NL_荷兰_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇷🇴_RO_罗马尼亚
+      - 未知
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇳🇱_NL_荷兰_2
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_5
+      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇦🇱_AL_阿尔巴尼亚
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇹🇷_TR_土耳其
+      - 🇮🇷_IR_伊朗->🇹🇷_TR_土耳其
+      - 🇳🇱_NL_荷兰_3
       - 🇷🇺_RU_俄罗斯_6
-      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇷🇺_RU_俄罗斯_7
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-      - 🇷🇺_RU_俄罗斯_8
+      - 🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯_9
       - 🇺🇸_US_美国_7
-      - 🇷🇺_RU_俄罗斯_10
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇷🇺_RU_俄罗斯_8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇷🇺_RU_俄罗斯_2
+      - 🇳🇱_NL_荷兰_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇷🇴_RO_罗马尼亚
+      - 未知
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇳🇱_NL_荷兰_2
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_5
+      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇦🇱_AL_阿尔巴尼亚
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇹🇷_TR_土耳其
+      - 🇮🇷_IR_伊朗->🇹🇷_TR_土耳其
+      - 🇳🇱_NL_荷兰_3
       - 🇷🇺_RU_俄罗斯_6
-      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇷🇺_RU_俄罗斯_7
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-      - 🇷🇺_RU_俄罗斯_8
+      - 🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯_9
       - 🇺🇸_US_美国_7
-      - 🇷🇺_RU_俄罗斯_10
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇷🇺_RU_俄罗斯_8
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇷🇺_RU_俄罗斯_2
+      - 🇳🇱_NL_荷兰_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇷🇴_RO_罗马尼亚
+      - 未知
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇳🇱_NL_荷兰_2
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_5
+      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇦🇱_AL_阿尔巴尼亚
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇹🇷_TR_土耳其
+      - 🇮🇷_IR_伊朗->🇹🇷_TR_土耳其
+      - 🇳🇱_NL_荷兰_3
       - 🇷🇺_RU_俄罗斯_6
-      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇷🇺_RU_俄罗斯_7
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-      - 🇷🇺_RU_俄罗斯_8
+      - 🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯_9
       - 🇺🇸_US_美国_7
-      - 🇷🇺_RU_俄罗斯_10
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇷🇺_RU_俄罗斯_8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇷🇺_RU_俄罗斯_2
+      - 🇳🇱_NL_荷兰_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇷🇴_RO_罗马尼亚
+      - 未知
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇳🇱_NL_荷兰_2
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_5
+      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇦🇱_AL_阿尔巴尼亚
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇹🇷_TR_土耳其
+      - 🇮🇷_IR_伊朗->🇹🇷_TR_土耳其
+      - 🇳🇱_NL_荷兰_3
       - 🇷🇺_RU_俄罗斯_6
-      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇷🇺_RU_俄罗斯_7
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-      - 🇷🇺_RU_俄罗斯_8
+      - 🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯_9
       - 🇺🇸_US_美国_7
-      - 🇷🇺_RU_俄罗斯_10
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇷🇺_RU_俄罗斯_8
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇷🇺_RU_俄罗斯_2
+      - 🇳🇱_NL_荷兰_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇷🇴_RO_罗马尼亚
+      - 未知
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇳🇱_NL_荷兰_2
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_5
+      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇦🇱_AL_阿尔巴尼亚
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇹🇷_TR_土耳其
+      - 🇮🇷_IR_伊朗->🇹🇷_TR_土耳其
+      - 🇳🇱_NL_荷兰_3
       - 🇷🇺_RU_俄罗斯_6
-      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇷🇺_RU_俄罗斯_7
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-      - 🇷🇺_RU_俄罗斯_8
+      - 🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯_9
       - 🇺🇸_US_美国_7
-      - 🇷🇺_RU_俄罗斯_10
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇷🇺_RU_俄罗斯_8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇷🇺_RU_俄罗斯_2
+      - 🇳🇱_NL_荷兰_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇷🇴_RO_罗马尼亚
+      - 未知
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇳🇱_NL_荷兰_2
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_5
+      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇦🇱_AL_阿尔巴尼亚
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇹🇷_TR_土耳其
+      - 🇮🇷_IR_伊朗->🇹🇷_TR_土耳其
+      - 🇳🇱_NL_荷兰_3
       - 🇷🇺_RU_俄罗斯_6
-      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇷🇺_RU_俄罗斯_7
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-      - 🇷🇺_RU_俄罗斯_8
+      - 🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯_9
       - 🇺🇸_US_美国_7
-      - 🇷🇺_RU_俄罗斯_10
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇷🇺_RU_俄罗斯_8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -478,33 +440,31 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇷🇺_RU_俄罗斯_2
+      - 🇳🇱_NL_荷兰_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇷🇴_RO_罗马尼亚
+      - 未知
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇳🇱_NL_荷兰_2
       - 🇷🇺_RU_俄罗斯_4
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
       - 🇷🇺_RU_俄罗斯_5
+      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇦🇱_AL_阿尔巴尼亚
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇹🇷_TR_土耳其
+      - 🇮🇷_IR_伊朗->🇹🇷_TR_土耳其
+      - 🇳🇱_NL_荷兰_3
       - 🇷🇺_RU_俄罗斯_6
-      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇷🇺_RU_俄罗斯_7
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-      - 🇷🇺_RU_俄罗斯_8
+      - 🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯_9
       - 🇺🇸_US_美国_7
-      - 🇷🇺_RU_俄罗斯_10
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇷🇺_RU_俄罗斯_8
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -858,7 +818,6 @@ rules:
   - DOMAIN-SUFFIX,rtbasia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sanya1.com,🛑 全球拦截
   - DOMAIN-SUFFIX,scupio.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,serving-sys.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuiguo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuzilm.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,similarweb.com,🛑 全球拦截
@@ -926,6 +885,7 @@ rules:
   - DOMAIN-SUFFIX,wqmobile.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wrating.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wumii.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,xcy8.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xdrig.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xiaozhen.com,🛑 全球拦截
@@ -959,7 +919,6 @@ rules:
   - DOMAIN-SUFFIX,zhjfad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zqzxz.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zzsx8.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,acuityplatform.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-stir.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-survey.com,🛑 全球拦截
@@ -2449,6 +2408,7 @@ rules:
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
   - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,iwara.tv,🌍 国外媒体
   - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
   - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
   - DOMAIN-KEYWORD,japonx,🌍 国外媒体
@@ -2547,7 +2507,6 @@ rules:
   - DOMAIN-SUFFIX,olevod.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,olevodtv.com,🌍 国外媒体
   - DOMAIN-KEYWORD,openai,🌍 国外媒体
-  - DOMAIN,gemini.google.com,🌍 国外媒体
   - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
   - DOMAIN-SUFFIX,challenges.cloudflare.com,🌍 国外媒体
   - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
@@ -2640,6 +2599,7 @@ rules:
   - DOMAIN-SUFFIX,telegram.org,📲 电报信息
   - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
   - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
+  - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
   - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
   - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
   - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
@@ -2845,6 +2805,13 @@ rules:
   - DOMAIN-SUFFIX,spring.io,🚀 节点选择
   - DOMAIN-SUFFIX,spring.net,🚀 节点选择
   - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
+  - DOMAIN,d1q6f0aelx0por.cloudfront.net,🚀 节点选择
+  - DOMAIN,d2wy8f7a9ursnm.cloudfront.net,🚀 节点选择
+  - DOMAIN,d36jcksde1wxzq.cloudfront.net,🚀 节点选择
+  - DOMAIN-SUFFIX,compose-spec.io,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.com,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
+  - DOMAIN-SUFFIX,dockerhub.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.co,🚀 节点选择
   - DOMAIN-SUFFIX,discord.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
@@ -2918,6 +2885,7 @@ rules:
   - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
+  - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
   - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
@@ -3015,6 +2983,7 @@ rules:
   - DOMAIN-SUFFIX,twimg.co,🚀 节点选择
   - DOMAIN-SUFFIX,twimg.com,🚀 节点选择
   - DOMAIN-SUFFIX,twimg.org,🚀 节点选择
+  - DOMAIN-SUFFIX,x.com,🚀 节点选择
   - DOMAIN-SUFFIX,t.me,🚀 节点选择
   - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
   - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
@@ -3231,6 +3200,8 @@ rules:
   - DOMAIN-SUFFIX,didialift.com,🎯 全球直连
   - DOMAIN-SUFFIX,didiglobal.com,🎯 全球直连
   - DOMAIN-SUFFIX,udache.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytefcdnrd.com,🎯 全球直连
+  - DOMAIN-SUFFIX,edgesrv.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.tv,🎯 全球直连
   - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
@@ -3540,6 +3511,7 @@ rules:
   - DOMAIN-SUFFIX,kaola.com,🎯 全球直连
   - DOMAIN-SUFFIX,knewone.com,🎯 全球直连
   - DOMAIN-SUFFIX,koowo.com,🎯 全球直连
+  - DOMAIN-SUFFIX,koyso.com,🎯 全球直连
   - DOMAIN-SUFFIX,ksyungslb.com,🎯 全球直连
   - DOMAIN-SUFFIX,kuaidi100.com,🎯 全球直连
   - DOMAIN-SUFFIX,kugou.com,🎯 全球直连
