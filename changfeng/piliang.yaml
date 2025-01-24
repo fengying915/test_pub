@@ -1,6 +1,6 @@
 # 生成地址：v2rayse.com
 # 模版名称：defaultName
-# 生成时间：2025-01-24 17:15:01
+# 生成时间：2025-01-24 23:26:30
 # 不要随意改变关键字，否则会导致出错
 # acl4SSR规则
 # 去广告：支持
@@ -58,7 +58,39 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
+  - name: 🇷🇺_RU_俄罗斯
+    port: 989
+    server: 185.231.233.112
+    type: ss
+    udp: true
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
   - name: 🇺🇸_US_美国_1
+    port: 80
+    server: 151.101.130.219
+    type: vless
+    network: ws
+    udp: true
+    ws-opts:
+      path: /olem/ws?ed=1024@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
+      headers:
+        host: foffmelo.com
+    uuid: 282b9908-551a-44c2-97ba-3f8f293e06c4
+  - name: 🇺🇸_US_美国_2
+    port: 989
+    server: 185.47.252.251
+    type: ss
+    udp: true
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+  - name: 🇷🇴_RO_罗马尼亚_1
+    port: 8080
+    server: 194.5.215.59
+    type: ss
+    udp: true
+    password: 14fFPrbezE3HDZzsMOr6
+    cipher: rc4-md5
+  - name: 🇺🇸_US_美国_3
     port: 2082
     server: 64.225.109.206
     type: vmess
@@ -70,9 +102,9 @@ proxies:
     cipher: auto
     uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
     alterId: 0
-  - name: 🇺🇸_US_美国_2
-    port: 2086
-    server: 190.93.245.230
+  - name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
+    port: 25230
+    server: cm1.awslcn.info
     type: vmess
     network: ws
     udp: true
@@ -81,31 +113,18 @@ proxies:
     ws-opts:
       path: /
       headers:
-        host: shs.xiaoqi666.xyz
-    cipher: auto
-    uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
-    alterId: 0
-  - name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-    port: 25230
-    server: cm1.awslcn.info
-    type: vmess
-    network: ws
-    udp: true
-    ws-opts:
-      path: /
-      headers:
         host: cm1.awslcn.info
     cipher: auto
     uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
     alterId: 0
-  - name: 🇺🇸_US_美国->🇨🇳_CN_中国_1
-    port: 443
-    server: 34.217.130.149
+  - name: 🇷🇴_RO_罗马尼亚_2
+    port: 989
+    server: 185.193.49.88
     type: ss
     udp: true
-    password: amazonskr05
+    password: f8f7aCzcPKbsF8p3
     cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国->🇨🇳_CN_中国_2
+  - name: 🇺🇸_US_美国_4
     port: 80
     server: 151.101.3.8
     type: vless
@@ -117,401 +136,178 @@ proxies:
       headers:
         host: 49.org
     uuid: 69f948be-1482-42d8-84df-9fdfdf2d4262
-  - name: 🇷🇺_RU_俄罗斯
-    port: 989
-    server: 185.231.233.112
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国->🇨🇳_CN_中国_3
-    port: 41400
-    server: 38.33.19.71
-    type: vmess
-    network: tcp
-    udp: true
-    cipher: auto
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-  - name: 🇺🇦_UA_乌克兰_1
-    port: 31348
-    server: 188.191.147.127
-    type: ss
-    udp: true
-    password: 6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6
-    cipher: chacha20-ietf-poly1305
-  - name: 🇺🇸_US_美国_3
-    port: 80
-    server: 151.101.0.223
-    type: vless
-    network: ws
-    udp: true
-    ws-opts:
-      path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480
-      headers:
-        host: JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
-    uuid: a88a22cf-4602-4866-948b-a1c1dfe85937
-  - name: 🇺🇸_US_美国_4
-    port: 80
-    server: 151.101.129.6
-    type: vless
-    network: ws
-    udp: true
-    ws-opts:
-      headers:
-        host: MOSIV2.CC
-    uuid: 1d9f05fa-9189-57a1-9664-3ecce65ccba5
-  - name: 🇷🇴_RO_罗马尼亚_1
-    port: 989
-    server: 188.214.36.155
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 🇫🇷_FR_法国_1
-    port: 989
-    server: 195.154.169.198
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
-    port: 80
-    server: 151.101.194.219
-    type: vless
-    network: ws
-    udp: true
-    ws-opts:
-      path: /olem/ws?ed=1024@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
-      headers:
-        host: foffmelo.com
-    uuid: 282b9908-551a-44c2-97ba-3f8f293e06c4
-  - name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-    port: 2052
-    server: 213.159.76.238
-    type: vless
-    network: ws
-    udp: true
-    ws-opts:
-      path: /vless#@FREEV2RNG,@FREEV2RNG,@FREEV2RNG,@FREEV2RNG,@FREEV2RNG,@FREEV2RNG,@FREEV2RNG,@FREEV2RNG,@FREEV2RNG,@FREEV2RNG,@FREEV2RNG,@FREEV2RNG
-    uuid: d724758c-505b-43be-b313-717be1fddc8a
-  - name: 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
-    port: 8080
-    server: 104.21.69.44
-    type: vless
-    network: ws
-    udp: true
-    ws-opts:
-      path: /@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,
-      headers:
-        host: chanel.kolacghi.ir.
-    uuid: 75c39c8d-4fb1-491d-bc1a-283cfc15d17a
   - name: 🇺🇸_US_美国_5
-    port: 989
-    server: 185.47.253.171
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 🇮🇷_IR_伊朗
-    port: 4810
-    server: 79.127.70.70
+    port: 80
+    server: ipcloudflaretamiz.fastly80-2.hosting-ip.com
     type: vless
-    network: tcp
+    network: ws
     udp: true
-    uuid: 1a873334-0a8b-46e9-b6b5-92ff9dd34fa6
-  - name: 🇺🇸_US_美国_6
-    port: 443
-    server: 34.217.62.14
-    type: ss
-    udp: true
-    password: amazonskr05
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_7
+    servername: vipfast_7.com
+    ws-opts:
+      path: /@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7?ed=1024
+      headers:
+        host: vipfast_7.com
+    uuid: 58c457e9-fd8f-4350-bd82-c953710058c0
+  - name: 🇩🇪_DE_德国
     port: 22222
-    server: 18.169.149.19
+    server: 18.194.196.199
     type: trojan
-    network: tcp
     udp: true
     sni: trojan.burgerip.co.uk
-    password: telegram-id-privatevpns
-    alpn:
-      - http/1.1
-  - name: 🇮🇹_IT_意大利
-    port: 989
-    server: 37.143.129.230
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国->🇮🇷_IR_伊朗_3
-    port: 80
-    server: 151.101.193.6
-    type: vless
-    network: ws
-    udp: true
-    ws-opts:
-      headers:
-        host: MOSIV2.CC
-    uuid: 1d9f05fa-9189-57a1-9664-3ecce65ccba5
-  - name: 🇷🇴_RO_罗马尼亚_2
-    port: 989
-    server: 185.193.49.88
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 🇬🇧_GB_英国
-    port: 989
-    server: 62.100.205.48
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 🇫🇷_FR_法国_2
-    port: 12345
-    server: 163.172.118.110
-    type: ss
-    udp: true
-    password: dongtaiwang.com
-    cipher: aes-256-gcm
-  - name: 🇺🇦_UA_乌克兰_2
-    port: 8388
-    server: de1.opensocks.site
-    type: ss
-    udp: true
-    password: M2I0MzM2
-    cipher: chacha20-ietf-poly1305
-  - name: 🇺🇸_US_美国_8
+    password: telegram-id-directvpn
+  - name: 🇺🇸_US_美国->🇨🇳_CN_中国
     port: 443
     server: 52.36.157.30
     type: ss
     udp: true
     password: amazonskr05
     cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国->🇮🇷_IR_伊朗_4
-    port: 80
-    server: 151.101.192.223
+  - name: 🇫🇷_FR_法国
+    port: 12345
+    server: 163.172.118.110
+    type: ss
+    udp: true
+    password: dongtaiwang.com
+    cipher: aes-256-gcm
+  - name: 🇺🇸_US_美国_6
+    port: 8080
+    server: 104.17.147.22
     type: vless
     network: ws
     udp: true
     ws-opts:
-      path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480
+      path: /
       headers:
-        host: JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
-    uuid: a88a22cf-4602-4866-948b-a1c1dfe85937
-  - name: 🇺🇸_US_美国->🇮🇷_IR_伊朗_5
+        host: xn---qhanayawi--d-24k6bpsq04a093aa7xpll4cy5cbab79043ht5ia.xn--48jyb6eya.tech.lilartik.online.
+    uuid: ff5e3f7e-5383-44a3-a48f-f5bb10d491b4
+  - name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
     port: 80
-    server: 151.101.64.223
+    server: 151.101.192.155
     type: vless
     network: ws
     udp: true
     ws-opts:
-      path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480
+      path: CANALTELEGRAM--@jet_config--CANALTELEGRAM--@jet_config
       headers:
-        host: JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
-    uuid: a88a22cf-4602-4866-948b-a1c1dfe85937
+        host: jetservices55.ir
+    uuid: 4ec0f045-5906-4383-aa28-2c8be6b6fb10
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_1
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_3
-      - 🇺🇦_UA_乌克兰_1
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
       - 🇷🇴_RO_罗马尼亚_1
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
-      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
-      - 🇺🇸_US_美国_5
-      - 🇮🇷_IR_伊朗
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_3
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
       - 🇷🇴_RO_罗马尼亚_2
-      - 🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_4
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇫🇷_FR_法国
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_1
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_3
-      - 🇺🇦_UA_乌克兰_1
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
       - 🇷🇴_RO_罗马尼亚_1
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
-      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
-      - 🇺🇸_US_美国_5
-      - 🇮🇷_IR_伊朗
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_3
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
       - 🇷🇴_RO_罗马尼亚_2
-      - 🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_4
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇫🇷_FR_法国
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_1
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_3
-      - 🇺🇦_UA_乌克兰_1
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
       - 🇷🇴_RO_罗马尼亚_1
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
-      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
-      - 🇺🇸_US_美国_5
-      - 🇮🇷_IR_伊朗
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_3
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
       - 🇷🇴_RO_罗马尼亚_2
-      - 🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_4
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇫🇷_FR_法国
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_1
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_3
-      - 🇺🇦_UA_乌克兰_1
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
       - 🇷🇴_RO_罗马尼亚_1
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
-      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
-      - 🇺🇸_US_美国_5
-      - 🇮🇷_IR_伊朗
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_3
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
       - 🇷🇴_RO_罗马尼亚_2
-      - 🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_4
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇫🇷_FR_法国
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_1
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_3
-      - 🇺🇦_UA_乌克兰_1
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
       - 🇷🇴_RO_罗马尼亚_1
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
-      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
-      - 🇺🇸_US_美国_5
-      - 🇮🇷_IR_伊朗
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_3
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
       - 🇷🇴_RO_罗马尼亚_2
-      - 🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_4
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇫🇷_FR_法国
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_1
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_3
-      - 🇺🇦_UA_乌克兰_1
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
       - 🇷🇴_RO_罗马尼亚_1
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
-      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
-      - 🇺🇸_US_美国_5
-      - 🇮🇷_IR_伊朗
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_3
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
       - 🇷🇴_RO_罗马尼亚_2
-      - 🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_4
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇫🇷_FR_法国
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -534,34 +330,20 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_1
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国->🇨🇳_CN_中国_3
-      - 🇺🇦_UA_乌克兰_1
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
       - 🇷🇴_RO_罗马尼亚_1
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_1
-      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_2
-      - 🇺🇸_US_美国_5
-      - 🇮🇷_IR_伊朗
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_3
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
       - 🇷🇴_RO_罗马尼亚_2
-      - 🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_4
-      - 🇺🇸_US_美国->🇮🇷_IR_伊朗_5
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇫🇷_FR_法国
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
