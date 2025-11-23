@@ -58,18 +58,20 @@ tun:
 
 
 proxies:
-  - type: trojan
-    name: 🇷🇺_RU_俄罗斯
-    server: 89.110.120.197
+  - type: vmess
+    name: ️95@oneclickvpnkeys
+    server: n1761296886.lie5d.cyou
     port: 443
-    password: 35f8e682-54bd-42c7-b537-94a8e4c84bcd
+    uuid: 697ece59-37c9-4a61-b986-705cad56057b
+    alterId: 0
     network: ws
-    sni: joss.gpj1.web.id
-    tls: true
+    cipher: auto
+    servername: n1761296886.lie5d.cyou
     ws-opts:
-      path: /Free-VPN-CF-Geo-Project/89.110.120.197=443
+      path: /
       headers:
-        Host: joss.gpj1.web.id
+        Host: n1761296886.lie5d.cyou
+    tls: true
   - type: vmess
     name: 🇺🇸US²_2|0.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
     server: n1749032902.xlxzzx.com
@@ -84,22 +86,22 @@ proxies:
       headers:
         Host: n1749032902.xlxzzx.com
     tls: true
+  - type: ss
+    name: 🇨🇳_CN_中国_1
+    server: 103.149.182.105
+    port: 8388
+    cipher: chacha20-ietf
+    password: asd123456
   - type: trojan
-    name: 🇷🇺_RU_俄罗斯_2
+    name: 🇷🇺_RU_俄罗斯
     server: 46.29.161.237
     port: 443
     password: 3ef03de40a234d209bb2d3807ca0d643
     network: tcp
     sni: 46.29.161.237
     skip-cert-verify: true
-  - type: ss
-    name: 🇺🇸_US_美国_3
-    server: 38.165.233.93
-    port: 989
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
   - type: trojan
-    name: 🇺🇸_US_美国_5
+    name: 🇺🇸_US_美国_1
     server: joss.gpj1.web.id
     port: 443
     password: 6e6191a3-9a93-4617-859a-8d0ea0fce937
@@ -112,131 +114,38 @@ proxies:
       headers:
         Host: joss.gpj1.web.id
   - type: trojan
-    name: 🇮🇹_IT_意大利
-    server: 94.177.199.119
-    port: 8443
-    password: e04af4a8-ce76-4026-8480-82d0e35dd239
-    network: ws
-    sni: joss.gpj1.web.id
-    fingerprint: randomized
-    tls: true
-    ws-opts:
-      path: /Free-VPN-CF-Geo-Project/94.177.199.119=8443
-      headers:
-        Host: joss.gpj1.web.id
-  - type: vmess
-    name: 🇭🇰HK²_7|3.2MB/s|NF|X|KeepHistory
-    server: n1749032179.kzxds.cn
-    port: 443
-    uuid: e1830fac-d81f-4799-826c-297bc25273d5
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: n1749032179.kzxds.cn
-    ws-opts:
-      path: /
-      headers:
-        Host: n1749032179.kzxds.cn
-    tls: true
-  - type: trojan
-    name: 🇨🇳_CN_中国_1
-    server: psg2-ag.t.sgateway.link
-    port: 5223
-    password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
-    network: tcp
-    sni: pod-kr-g1.psusercontent.com
-    tls: true
-  - type: trojan
-    name: 🇬🇧_GB_英国
-    server: 109.169.76.23
-    port: 443
-    password: d69e725c-7c7e-4c75-9786-4859b4e0bbc6
+    name: 🇺🇸_US_美国_2
+    server: 38.180.72.162
+    port: 2053
+    password: eb7339c5-70e4-4c7b-b5ef-4128adc8136a
     network: ws
     sni: joss.gpj1.web.id
     tls: true
     ws-opts:
-      path: /Free-VPN-CF-Geo-Project/109.169.76.23=443
+      path: /Free-VPN-CF-Geo-Project/38.180.72.162=2053
       headers:
         Host: joss.gpj1.web.id
-  - type: trojan
-    name: 🇨🇳_CN_中国_2
-    server: 58.152.25.241
-    port: 443
-    password: BxceQaOe
-    network: tcp
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-  - type: ss
-    name: 🇩🇪_DE_德国
-    server: 45.87.175.166
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: 1RWwXhwfAB5gAEozU4G2Pg
-  - type: vmess
-    name: "@v2FreeHub 🇨🇦 153ms | vmess"
-    server: 69.28.82.253
-    port: 443
-    uuid: f282b878-8711-45a1-8c69-5564172123c1
-    alterId: 0
-    network: ws
-    cipher: zero
-    servername: vm.gpj1.web.id
-    ws-opts:
-      path: /Geo-Project/69.28.82.253-443
-      headers:
-        Host: vm.gpj1.web.id
-    tls: true
-  - type: trojan
-    name: 🇨🇳_CN_中国_3
-    server: 58.152.53.22
-    port: 443
-    password: BxceQaOe
-    network: tcp
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-  - type: ss
-    name: 🇰🇷_KR_韩国
-    server: 218.237.185.230
-    port: 4652
-    cipher: aes-256-cfb
-    password: qwerREWQ@@
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇷🇺_RU_俄罗斯
+      - ️95@oneclickvpnkeys
       - 🇺🇸US²_2|0.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_5
-      - 🇮🇹_IT_意大利
-      - 🇭🇰HK²_7|3.2MB/s|NF|X|KeepHistory
       - 🇨🇳_CN_中国_1
-      - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国_2
-      - 🇩🇪_DE_德国
-      - "@v2FreeHub 🇨🇦 153ms | vmess"
-      - 🇨🇳_CN_中国_3
-      - 🇰🇷_KR_韩国
+      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇷🇺_RU_俄罗斯
+      - ️95@oneclickvpnkeys
       - 🇺🇸US²_2|0.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_5
-      - 🇮🇹_IT_意大利
-      - 🇭🇰HK²_7|3.2MB/s|NF|X|KeepHistory
       - 🇨🇳_CN_中国_1
-      - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国_2
-      - 🇩🇪_DE_德国
-      - "@v2FreeHub 🇨🇦 153ms | vmess"
-      - 🇨🇳_CN_中国_3
-      - 🇰🇷_KR_韩国
+      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
@@ -256,20 +165,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺_RU_俄罗斯
+      - ️95@oneclickvpnkeys
       - 🇺🇸US²_2|0.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_5
-      - 🇮🇹_IT_意大利
-      - 🇭🇰HK²_7|3.2MB/s|NF|X|KeepHistory
       - 🇨🇳_CN_中国_1
-      - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国_2
-      - 🇩🇪_DE_德国
-      - "@v2FreeHub 🇨🇦 153ms | vmess"
-      - 🇨🇳_CN_中国_3
-      - 🇰🇷_KR_韩国
+      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
 rule-providers:
   LocalAreaNetwork:
     type: http
