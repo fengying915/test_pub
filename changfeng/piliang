@@ -58,83 +58,104 @@ tun:
 
 
 proxies:
-  - type: ss
-    name: 🇨🇳_CN_中国
-    server: 103.149.182.38
-    port: 8388
-    cipher: chacha20-ietf
-    password: asd123456
-  - type: trojan
-    name: 🇺🇸_US_美国_1
-    server: ip.sb
-    port: 8443
-    password: trojan
+  - type: hysteria
+    name: 🇫🇷_FR_法国
+    server: 62.210.10.186
+    port: 50011
+    auth-str: dongtaiwang.com
+    protocol: udp
+    sni: apple.com
+    up: 11 Mbps
+    down: 55 Mbps
+    skip-cert-verify: true
+    alpn:
+      - h3
+  - type: vmess
+    name: 🇭🇰 HK_107
+    server: 954e8f8f-sv4n40-svs488-n09f.hk3.p5pv.com
+    port: 80
+    uuid: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
+    alterId: 2
     network: ws
-    sni: fofang.pages.dev
-    tls: true
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
     ws-opts:
       path: /
-  - type: ss
-    name: 🇫🇷_FR_法国
-    server: 35.180.122.182
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-  - type: ss
-    name: 🇫🇷_FR_法国_1
-    server: 195.154.119.77
-    port: 989
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - type: ss
-    name: 🇺🇸_US_美国_6
-    server: 3.65.219.59
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-  - type: ss
-    name: 🇺🇸_US_美国_7
-    server: 63.180.254.10
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-  - type: ss
-    name: 🇺🇸_US_美国_8
-    server: 3.76.39.215
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-  - type: ss
-    name: 🇺🇸_US_美国_9
-    server: 137.184.174.93
-    port: 8080
-    cipher: rc4-md5
-    password: 14fFPrbezE3HDZzsMOr6
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 香港家宽 287
+    server: e88cede0-t6t0g0-t7c05o-n09f.hk3.p5pv.com
+    port: 80
+    uuid: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 香港家宽 241
+    server: 25490de0-t6t0g0-tamumc-1lkbs.hk3.p5pv.com
+    port: 80
+    uuid: 5a4c13ae-6673-11ee-a149-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 香港家宽 274
+    server: f5463848-t6t0g0-t9p7yj-1ijh5.hk3.p5pv.com
+    port: 80
+    uuid: f7d95364-607b-11ee-93af-f23c91369f2d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 32
+    server: 7b1dbdd1-t6ngg0-t917sa-12ach.hk3.p5pv.com
+    port: 80
+    uuid: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: 7b1dbdd1-t6ngg0-t917sa-12ach.hk3.p5pv.com
+    ws-opts:
+      path: /
+      headers:
+        Host: 7b1dbdd1-t6ngg0-t917sa-12ach.hk3.p5pv.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_1
       - 🇫🇷_FR_法国
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇭🇰 HK_107
+      - 🇭🇰 香港家宽 287
+      - 🇭🇰 香港家宽 241
+      - 🇭🇰 香港家宽 274
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 32
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_1
       - 🇫🇷_FR_法国
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇭🇰 HK_107
+      - 🇭🇰 香港家宽 287
+      - 🇭🇰 香港家宽 241
+      - 🇭🇰 香港家宽 274
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 32
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
@@ -154,14 +175,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_1
       - 🇫🇷_FR_法国
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇭🇰 HK_107
+      - 🇭🇰 香港家宽 287
+      - 🇭🇰 香港家宽 241
+      - 🇭🇰 香港家宽 274
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 32
 rule-providers:
   LocalAreaNetwork:
     type: http
