@@ -58,70 +58,25 @@ tun:
 
 
 proxies:
-  - type: ss
-    name: 🇨🇳_CN_中国
-    server: 103.149.182.38
-    port: 8388
-    cipher: chacha20-ietf
-    password: asd123456
-  - type: hysteria
-    name: 🇫🇷_FR_法国
-    server: 62.210.10.186
-    port: 50011
-    auth-str: dongtaiwang.com
-    protocol: udp
-    sni: apple.com
-    up: 11 Mbps
-    down: 55 Mbps
-    skip-cert-verify: true
-    alpn:
-      - h3
-  - type: ss
-    name: 🇨🇳_CN_中国_1
-    server: 103.149.183.191
-    port: 8388
-    cipher: chacha20-ietf
-    password: asd123456
-  - type: hysteria
-    name: 🇫🇷_FR_法国_1
-    server: 62.210.10.186
-    port: 35511
-    auth-str: dongtaiwang.com
-    protocol: udp
-    sni: apple.com
-    up: "11"
-    down: "55"
-    skip-cert-verify: true
-    alpn:
-      - h3
   - type: vmess
-    name: 🇫🇷 法国 09
-    server: v35.hdacd.com
-    port: 30835
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
+    name: 233boy-tcp-144.24.73.157
+    server: 144.24.73.157
+    port: 10662
+    uuid: 56a645d9-18c9-4d43-96e2-ea7083890b25
+    alterId: 0
     network: tcp
     cipher: auto
-    servername: v35.hdacd.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_CN_中国
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国_1
-      - 🇫🇷_FR_法国_1
-      - 🇫🇷 法国 09
+      - 233boy-tcp-144.24.73.157
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇨🇳_CN_中国
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国_1
-      - 🇫🇷_FR_法国_1
-      - 🇫🇷 法国 09
+      - 233boy-tcp-144.24.73.157
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
@@ -141,11 +96,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国_1
-      - 🇫🇷_FR_法国_1
-      - 🇫🇷 法国 09
+      - 233boy-tcp-144.24.73.157
 rule-providers:
   LocalAreaNetwork:
     type: http
