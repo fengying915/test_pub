@@ -1,18 +1,8 @@
-# ;不要随意改变关键字，否则会导致出错
-# ;acl4SSR规则
-# ;去广告：支持
-# ;自动测速：支持
-# ;微软分流：不支持
-# ;苹果分流：不支持
-# ;增强中国IP段：不支持
-# ;增强国外GFW：不支持
-# ;ruleset=🎯 全球直连,[]GEOIP,LAN
-
 mixed-port: 7890
-allow-lan: false
+allow-lan: true
 mode: rule
-ipv6: false
 log-level: info
+ipv6: false
 external-controller: 0.0.0.0:9090
 dns:
   enable: true
@@ -55,30 +45,584 @@ tun:
     - 8.8.4.4
     - 1.1.1.1
     - 1.0.0.1
-
-
 proxies:
-  - type: vmess
-    name: 233boy-tcp-144.24.73.157
-    server: 144.24.73.157
-    port: 10662
-    uuid: 56a645d9-18c9-4d43-96e2-ea7083890b25
-    alterId: 0
-    network: tcp
+  - name: 🇺🇸_US_美国
+    type: vless
+    server: 151.101.3.8
+    port: 80
+    uuid: dd0cfef0-fda9-47ec-8a65-49d7bc004f82
+    network: ws
+    tls: false
+    ws-opts:
+      path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN
+      headers:
+        Host: mitivpn.global.ssl.fastly.net
+  - name: 🇺🇸_US_美国_1
+    type: vless
+    server: 162.159.16.63
+    port: 443
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    network: ws
+    servername: l.ayovo.netlib.re
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: l.ayovo.netlib.re
+  - name: 🇺🇸_US_美国_2
+    type: vless
+    server: cloudflare.182682.xyz
+    port: 443
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    network: ws
+    servername: l.ayovo.netlib.re
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: l.ayovo.netlib.re
+  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
+    type: vmess
+    server: 3ef1531d-t70f40-t6z0et-1t60o.hkt.gotochinatown.net
+    port: 80
+    uuid: ce481c6e-f4c8-11ef-bbb0-f23c91cfbbc9
+    alterId: 2
     cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 3ef1531d-t70f40-t6z0et-1t60o.hkt.gotochinatown.net
+  - name: 🇺🇸_US_美国_3
+    type: trojan
+    server: ip.sb
+    port: 443
+    password: trojan
+    sni: nixian.pages.dev
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /?ed=2560/?Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-
+  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 39
+    type: vmess
+    server: ec130d51-t6pb40-t72h4q-1spnr.hkt.gotochinatown.net
+    port: 80
+    uuid: 127e3f92-f714-11ef-bbb0-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ec130d51-t6pb40-t72h4q-1spnr.hkt.gotochinatown.net
+  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 24
+    type: vmess
+    server: 84146e14-t6r5s0-tiuovf-v3c2.hkt.gotochinatown.net
+    port: 80
+    uuid: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 84146e14-t6r5s0-tiuovf-v3c2.hkt.gotochinatown.net
+  - name: 🇺🇸_US_美国_4
+    type: ss
+    server: 216.105.168.18
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: R7B0hvdW3P240G3AcVZt9U
+  - name: 🇺🇸_US_美国_5
+    type: vless
+    server: 104.21.224.5
+    port: 443
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    network: ws
+    servername: l.ayovo.netlib.re
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: l.ayovo.netlib.re
+  - name: 🇺🇸_US_美国_6
+    type: vless
+    server: lord.kokopit.info
+    port: 2096
+    uuid: 337bf72e-bb79-4d5f-be3f-7822eb77100c
+    network: ws
+    servername: 18XaCgNj9C.bAsErTy.InFo
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 18XaCgNj9C.bAsErTy.InFo
+  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 36
+    type: vmess
+    server: 03199e4c-t6r5s0-tbnucr-1thfv.hkt.gotochinatown.net
+    port: 80
+    uuid: 0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 03199e4c-t6r5s0-tbnucr-1thfv.hkt.gotochinatown.net
+  - name: 🇩🇪_DE_德国
+    type: vless
+    server: api.dark-coffe.com
+    port: 443
+    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+    network: ws
+    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
+  - name: 🇺🇸_US_美国_7
+    type: vless
+    server: 104.19.250.98
+    port: 2083
+    uuid: ce035748-9913-40c9-9fb6-c8389f7cdcf3
+    network: ws
+    servername: yousef.varzesh.dpdns.org
+    tls: true
+    client-fingerprint: random
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: yousef.varzesh.dpdns.org
+  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 22
+    type: vmess
+    server: 1eca9439-t6r5s0-taklwz-12bd.hkt.gotochinatown.net
+    port: 80
+    uuid: ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 1eca9439-t6r5s0-taklwz-12bd.hkt.gotochinatown.net
+  - name: 🇩🇪_DE_德国_1
+    type: vless
+    server: 5.10.214.5
+    port: 443
+    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+    network: ws
+    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
+  - name: 🇩🇪_DE_德国_2
+    type: vless
+    server: api.dark-coffe.com
+    port: 2096
+    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+    network: ws
+    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
+  - name: 🏳️_unKnow_未知
+    type: vless
+    server: austria-nc.geodema.network
+    port: 443
+    uuid: ce55bd7e-87c8-4909-91d9-e57bcefef524
+    servername: austria-nc.geodema.network
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    reality-opts:
+      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+      short-id: 1ed136481e0ede74
+  - name: 🇪🇸_ES_西班牙
+    type: trojan
+    server: 109.234.211.66
+    port: 8443
+    password: trojan
+    sni: store.timimi.dpdns.org
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: store.timimi.dpdns.org
+  - name: 🇺🇸_US_美国_8
+    type: vless
+    server: 192.210.175.108
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: ww20.allxniu.qzz.io
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: ww20.allxniu.qzz.io
+  - name: 🇨🇦_CA_加拿大
+    type: vless
+    server: 142.171.217.19
+    port: 29028
+    uuid: 7426d51e-bb52-403d-e3bb-ef823d306766
+    servername: addons.mozilla.org
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: rwpbqas_HY8knlW0fFSIeUrjgBXHBzSNboflsLD8elA
+  - name: 🇫🇷_FR_法国
+    type: vless
+    server: bgr01-vlr01.tcp-reset-club.net
+    port: 443
+    uuid: f13b15a6-d235-4161-b57a-274676335502
+    servername: hls-svod.itunes.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: d3b13f31
+  - name: 🇷🇺_RU_俄罗斯
+    type: vless
+    server: 91.243.82.82
+    port: 443
+    uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
+    servername: khabarovsk.geodema.network
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+      short-id: 1ed136481e0ede74
+  - name: 🇷🇺_RU_俄罗斯_1
+    type: vless
+    server: 95.174.92.156
+    port: 443
+    uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
+    servername: sun6-21.userapi.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+      short-id: c7e42004e5f024be
+  - name: 🏳️_unKnow_未知_1
+    type: vless
+    server: khabarovsk.geodema.network
+    port: 443
+    uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
+    servername: khabarovsk.geodema.network
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+      short-id: 1ed136481e0ede74
+  - name: 🇩🇪_DE_德国_3
+    type: vless
+    server: api.dark-coffe.com
+    port: 2087
+    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+    network: ws
+    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
+    tls: true
+    ws-opts:
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+      headers:
+        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
+  - name: 🇮🇶_IQ_伊拉克
+    type: vless
+    server: 178.17.53.28
+    port: 47539
+    uuid: 447c45cd-ade0-4bfe-90a0-3e581829f741
+    servername: yandex.ru
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: uapzi5mhLkADHuak0eXEKq9vIl2A8IGrMhjdIG-tn3U
+      short-id: 82a55f31981ea6be
+  - name: 🇩🇪_DE_德国_4
+    type: hysteria2
+    server: 89.144.35.25
+    port: 33550
+    password: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+  - name: 🇺🇸_US_美国_9
+    type: vless
+    server: 104.18.185.26
+    port: 443
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    network: ws
+    servername: l.ayovo.netlib.re
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: l.ayovo.netlib.re
+  - name: HK-219.79.48.106-5018
+    type: vmess
+    server: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
+    port: 80
+    uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
+  - name: 🏳️_unKnow_未知_2
+    type: vless
+    server: japan.geodema.network
+    port: 443
+    uuid: a11ab9c5-4155-430b-9efc-7a7122531382
+    servername: japan.geodema.network
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+      short-id: 1ed136481e0ede74
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 233boy-tcp-144.24.73.157
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
+      - 🇺🇸_US_美国_3
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 39
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 24
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 36
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国_7
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 22
+      - 🇩🇪_DE_德国_1
+      - 🇩🇪_DE_德国_2
+      - 🏳️_unKnow_未知
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国_8
+      - 🇨🇦_CA_加拿大
+      - 🇫🇷_FR_法国
+      - 🇷🇺_RU_俄罗斯
+      - 🇷🇺_RU_俄罗斯_1
+      - 🏳️_unKnow_未知_1
+      - 🇩🇪_DE_德国_3
+      - 🇮🇶_IQ_伊拉克
+      - 🇩🇪_DE_德国_4
+      - 🇺🇸_US_美国_9
+      - HK-219.79.48.106-5018
+      - 🏳️_unKnow_未知_2
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 233boy-tcp-144.24.73.157
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
+      - 🇺🇸_US_美国_3
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 39
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 24
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 36
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国_7
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 22
+      - 🇩🇪_DE_德国_1
+      - 🇩🇪_DE_德国_2
+      - 🏳️_unKnow_未知
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国_8
+      - 🇨🇦_CA_加拿大
+      - 🇫🇷_FR_法国
+      - 🇷🇺_RU_俄罗斯
+      - 🇷🇺_RU_俄罗斯_1
+      - 🏳️_unKnow_未知_1
+      - 🇩🇪_DE_德国_3
+      - 🇮🇶_IQ_伊拉克
+      - 🇩🇪_DE_德国_4
+      - 🇺🇸_US_美国_9
+      - HK-219.79.48.106-5018
+      - 🏳️_unKnow_未知_2
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
+      - 🇺🇸_US_美国_3
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 39
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 24
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 36
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国_7
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 22
+      - 🇩🇪_DE_德国_1
+      - 🇩🇪_DE_德国_2
+      - 🏳️_unKnow_未知
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国_8
+      - 🇨🇦_CA_加拿大
+      - 🇫🇷_FR_法国
+      - 🇷🇺_RU_俄罗斯
+      - 🇷🇺_RU_俄罗斯_1
+      - 🏳️_unKnow_未知_1
+      - 🇩🇪_DE_德国_3
+      - 🇮🇶_IQ_伊拉克
+      - 🇩🇪_DE_德国_4
+      - 🇺🇸_US_美国_9
+      - HK-219.79.48.106-5018
+      - 🏳️_unKnow_未知_2
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
+      - 🇺🇸_US_美国_3
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 39
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 24
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 36
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国_7
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 22
+      - 🇩🇪_DE_德国_1
+      - 🇩🇪_DE_德国_2
+      - 🏳️_unKnow_未知
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国_8
+      - 🇨🇦_CA_加拿大
+      - 🇫🇷_FR_法国
+      - 🇷🇺_RU_俄罗斯
+      - 🇷🇺_RU_俄罗斯_1
+      - 🏳️_unKnow_未知_1
+      - 🇩🇪_DE_德国_3
+      - 🇮🇶_IQ_伊拉克
+      - 🇩🇪_DE_德国_4
+      - 🇺🇸_US_美国_9
+      - HK-219.79.48.106-5018
+      - 🏳️_unKnow_未知_2
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
+      - 🇺🇸_US_美国_3
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 39
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 24
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 36
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国_7
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 22
+      - 🇩🇪_DE_德国_1
+      - 🇩🇪_DE_德国_2
+      - 🏳️_unKnow_未知
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国_8
+      - 🇨🇦_CA_加拿大
+      - 🇫🇷_FR_法国
+      - 🇷🇺_RU_俄罗斯
+      - 🇷🇺_RU_俄罗斯_1
+      - 🏳️_unKnow_未知_1
+      - 🇩🇪_DE_德国_3
+      - 🇮🇶_IQ_伊拉克
+      - 🇩🇪_DE_德国_4
+      - 🇺🇸_US_美国_9
+      - HK-219.79.48.106-5018
+      - 🏳️_unKnow_未知_2
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
+      - 🇺🇸_US_美国_3
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 39
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 24
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 36
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国_7
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 22
+      - 🇩🇪_DE_德国_1
+      - 🇩🇪_DE_德国_2
+      - 🏳️_unKnow_未知
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国_8
+      - 🇨🇦_CA_加拿大
+      - 🇫🇷_FR_法国
+      - 🇷🇺_RU_俄罗斯
+      - 🇷🇺_RU_俄罗斯_1
+      - 🏳️_unKnow_未知_1
+      - 🇩🇪_DE_德国_3
+      - 🇮🇶_IQ_伊拉克
+      - 🇩🇪_DE_德国_4
+      - 🇺🇸_US_美国_9
+      - HK-219.79.48.106-5018
+      - 🏳️_unKnow_未知_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,83 +634,118 @@ proxy-groups:
     proxies:
       - REJECT
       - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
   - name: 🐟 漏网之鱼
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 233boy-tcp-144.24.73.157
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
+      - 🇺🇸_US_美国_3
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 39
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 24
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 36
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国_7
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 22
+      - 🇩🇪_DE_德国_1
+      - 🇩🇪_DE_德国_2
+      - 🏳️_unKnow_未知
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国_8
+      - 🇨🇦_CA_加拿大
+      - 🇫🇷_FR_法国
+      - 🇷🇺_RU_俄罗斯
+      - 🇷🇺_RU_俄罗斯_1
+      - 🏳️_unKnow_未知_1
+      - 🇩🇪_DE_德国_3
+      - 🇮🇶_IQ_伊拉克
+      - 🇩🇪_DE_德国_4
+      - 🇺🇸_US_美国_9
+      - HK-219.79.48.106-5018
+      - 🏳️_unKnow_未知_2
 rule-providers:
   LocalAreaNetwork:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-    path: ./rules/providers/LocalAreaNetwork.list
-    interval: 86400
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/LocalAreaNetwork.list
+    path: ./rules/LocalAreaNetwork.yaml
   BanAD:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-    path: ./rules/providers/BanAD.list
-    interval: 86400
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanAD.list
+    path: ./rules/BanAD.yaml
   BanProgramAD:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-    path: ./rules/providers/BanProgramAD.list
-    interval: 86400
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanProgramAD.list
+    path: ./rules/BanProgramAD.yaml
   GoogleCN:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-    path: ./rules/providers/GoogleCN.list
-    interval: 86400
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/GoogleCN.list
+    path: ./rules/GoogleCN.yaml
   SteamCN:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
-    path: ./rules/providers/SteamCN.list
-    interval: 86400
-  Telegram:
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/SteamCN.yaml
+  Microsoft:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
-    path: ./rules/providers/Telegram.list
-    interval: 86400
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Microsoft.list
+    path: ./rules/Microsoft.yaml
+  Apple:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Apple.list
+    path: ./rules/Apple.yaml
   ProxyMedia:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-    path: ./rules/providers/ProxyMedia.list
-    interval: 86400
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyMedia.list
+    path: ./rules/ProxyMedia.yaml
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Telegram.list
+    path: ./rules/Telegram.yaml
   ProxyLite:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
-    path: ./rules/providers/ProxyLite.list
-    interval: 86400
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyLite.list
+    path: ./rules/ProxyLite.yaml
   ChinaDomain:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-    path: ./rules/providers/ChinaDomain.list
-    interval: 86400
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list
+    path: ./rules/ChinaDomain.yaml
   ChinaCompanyIp:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-    path: ./rules/providers/ChinaCompanyIp.list
-    interval: 86400
-
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list
+    path: ./rules/ChinaCompanyIp.yaml
 rules:
   - RULE-SET,LocalAreaNetwork,🎯 全球直连
   - RULE-SET,BanAD,🛑 全球拦截
-  - RULE-SET,BanProgramAD,🛑 全球拦截
+  - RULE-SET,BanProgramAD,🍃 应用净化
   - RULE-SET,GoogleCN,🎯 全球直连
   - RULE-SET,SteamCN,🎯 全球直连
-  - RULE-SET,Telegram,🚀 节点选择
-  - RULE-SET,ProxyMedia,🚀 节点选择
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,Telegram,📲 电报信息
   - RULE-SET,ProxyLite,🚀 节点选择
   - RULE-SET,ChinaDomain,🎯 全球直连
   - RULE-SET,ChinaCompanyIp,🎯 全球直连
