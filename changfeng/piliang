@@ -46,434 +46,282 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
+  - name: 🇪🇸_ES_西班牙
+    type: ss
+    server: 5.188.181.201
+    port: 9005
+    cipher: aes-256-cfb
+    password: ZET59LF6DvCC8KVt
+  - name: 🇺🇸_US_美国->🇪🇸_ES_西班牙
+    type: vless
+    server: ip-data.turkserver.ir
+    port: 2083
+    uuid: c0b8751d-3bcd-4f55-9cca-4a00fc955a15
+    network: ws
+    servername: all-nm1.netsnap.ir.
+    tls: true
+    client-fingerprint: firefox
+    ws-opts:
+      path: /
+      headers:
+        Host: all-nm1.netsnap.ir.
+  - name: 🇸🇦_SA_沙特阿拉伯->🇷🇺_RU_俄罗斯
+    type: vless
+    server: 213.165.58.213
+    port: 443
+    uuid: c48bd63d-f4a0-42d5-9569-6ccfe5c435ed
+    servername: yandex.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: wYoaKmGm40vL6L1lg-2umg9nIXUIqzPfmvw57C1fwXU
+      short-id: 0c0ecbe84815
   - name: 🇺🇸_US_美国
     type: vless
-    server: 151.101.3.8
-    port: 80
-    uuid: dd0cfef0-fda9-47ec-8a65-49d7bc004f82
-    network: ws
-    tls: false
-    ws-opts:
-      path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN
-      headers:
-        Host: mitivpn.global.ssl.fastly.net
-  - name: 🇺🇸_US_美国_1
-    type: vless
-    server: cloudflare.182682.xyz
+    server: s719.okgfw.top
     port: 443
-    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-    network: ws
-    servername: l.ayovo.netlib.re
+    uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+    servername: u708330u9530s719.okgfw.top
     tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: l.ayovo.netlib.re
-  - name: 🇺🇸_US_美国_2
-    type: vless
-    server: 162.159.16.63
-    port: 443
-    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-    network: ws
-    servername: l.ayovo.netlib.re
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: l.ayovo.netlib.re
-  - name: HK-220.246.190.122-5033
-    type: vmess
-    server: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
-    port: 80
-    uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
-    alterId: 2
-    cipher: auto
-    tls: false
+    flow: xtls-rprx-vision
+    client-fingerprint: random
+  - name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+    type: trojan
+    server: 220.130.58.136
+    port: 35501
+    password: 47d9af53-24a8-4593-a439-a73b88ad53ae
+    sni: green2.cdntencentmusic.com
     skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
-  - name: 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet -
-      24
-    type: vmess
-    server: 84146e14-t6r5s0-tiuovf-v3c2.hkt.gotochinatown.net
-    port: 80
-    uuid: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
-    alterId: 2
-    cipher: auto
     tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 84146e14-t6r5s0-tiuovf-v3c2.hkt.gotochinatown.net
-  - name: HK-220.246.190.122-5034
-    type: vmess
-    server: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
+  - name: 🇺🇸_US_美国->🇬🇧_GB_英国
+    type: vless
+    server: vpn.nnet.online
     port: 80
-    uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
-    alterId: 2
-    cipher: auto
+    uuid: 421a5536-c3c8-45ab-aa36-2ff032c6d44e
+    network: ws
     tls: false
-    skip-cert-verify: false
-    network: ws
     ws-opts:
-      path: /
+      path: /vless-ntls
       headers:
-        Host: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
-  - name: 🇺🇸_US_美国_3
-    type: vless
-    server: 104.18.185.26
-    port: 443
-    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-    network: ws
-    servername: l.ayovo.netlib.re
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: l.ayovo.netlib.re
-  - name: 🇺🇸_US_美国_4
-    type: vless
-    server: 104.17.25.173
-    port: 443
-    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-    network: ws
-    servername: l.ayovo.netlib.re
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: l.ayovo.netlib.re
-  - name: 🇺🇸_US_美国_5
-    type: vless
-    server: 104.21.224.5
-    port: 443
-    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-    network: ws
-    servername: l.ayovo.netlib.re
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: l.ayovo.netlib.re
-  - name: 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 9
-    type: vmess
-    server: cd5a4e76-t70f40-t7dv8l-1szgv.hkt.gotochinatown.net
-    port: 80
-    uuid: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: cd5a4e76-t70f40-t7dv8l-1szgv.hkt.gotochinatown.net
-  - name: 🇩🇪_DE_德国
-    type: vless
-    server: api.dark-coffe.com
-    port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 🇩🇪_DE_德国_1
-    type: vless
-    server: 5.10.214.5
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 🇩🇪_DE_德国_2
-    type: vless
-    server: 5.10.214.0
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 🇩🇪_DE_德国_3
-    type: vless
-    server: api.dark-coffe.com
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
+        Host: nnet.online
   - name: 🇬🇧_GB_英国
     type: vless
-    server: 25.129.197.138
-    port: 2053
-    uuid: 8a07740f-b932-4372-a3a2-ed91f184cd33
-    network: ws
-    servername: KhAmeneI.DPdNs.OrG
+    server: 91.84.113.61
+    port: 443
+    uuid: 30c04389-bbcb-431f-9d47-a8ad24406bd4
+    servername: api-maps.yandex.ru
     tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: eQXsYV276NoiN9SDwuloNrJkX-NU2tDtkMK6ntKQwlg
+      short-id: 701775cae5f3a793
+  - name: 未知
+    type: ss
+    server: 103.186.154.168
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  - name: 🇨🇦_CA_加拿大
+    type: vless
+    server: 165.154.235.194
+    port: 30001
+    uuid: be70763e-ab0a-4f8d-87aa-b8ae86495cca
+    servername: www.cloudflare.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
+  - name: 🇺🇸_US_美国_1
+    type: vless
+    server: 104.18.32.47
+    port: 80
+    uuid: e31085f9-7f55-4a7d-b00e-ce94149477cb
+    network: ws
+    tls: false
     client-fingerprint: chrome
     ws-opts:
-      path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+      path: /
       headers:
-        Host: khamenei.dpdns.org
-  - name: 🇨🇳_CN_中国
+        Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
+  - name: 🇨🇳_CN_中国->🇩🇪_DE_德国_1
     type: trojan
-    server: 58.152.46.60
-    port: 443
-    password: BxceQaOe
-    sni: +++++++[By+DukeMehdi]+b2n.ir/v2ray-configs+|+402+
-    skip-cert-verify: true
-    tls: false
-  - name: 🇩🇪_DE_德国_4
+    server: green2.cdntencentmusic.com
+    port: 35502
+    password: 26635779-8ce6-4c07-ae5d-f3769ec95ddd
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
+    tls: true
+  - name: 🇨🇭_CH_瑞士
     type: vless
-    server: picassooo.info
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    server: 138.124.180.67
+    port: 443
+    uuid: c48bd63d-f4a0-42d5-9569-6ccfe5c435ed
+    servername: yandex.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: wYoaKmGm40vL6L1lg-2umg9nIXUIqzPfmvw57C1fwXU
+      short-id: fa
+  - name: 🇷🇺_RU_俄罗斯->🇬🇧_GB_英国
+    type: vless
+    server: 212.233.73.247
+    port: 443
+    uuid: 30c04389-bbcb-431f-9d47-a8ad24406bd4
+    servername: api-maps.yandex.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: eQXsYV276NoiN9SDwuloNrJkX-NU2tDtkMK6ntKQwlg
+      short-id: df13327f2677fc90
+  - name: 未知_1
+    type: ss
+    server: 103.186.155.25
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  - name: 🇺🇸_US_美国_2
+    type: vless
+    server: 2.56.179.207
+    port: 443
+    uuid: 395b4d7b-0abf-4b48-b9da-7432d800ef65
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: TZG5DCQE_AbyDZ_I25TEewa-uk5bs_9Nx0X1vRSpxk8
+      short-id: 6d7b
+  - name: 🇳🇱_NL_荷兰
+    type: vless
+    server: 45.145.56.119
+    port: 443
+    uuid: c48bd63d-f4a0-42d5-9569-6ccfe5c435ed
+    servername: yandex.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: wYoaKmGm40vL6L1lg-2umg9nIXUIqzPfmvw57C1fwXU
+      short-id: 847cd30556ea39
+  - name: 🇨🇳_CN_中国
+    type: ss
+    server: ldu.izenny.com
+    port: 28063
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 🇺🇸_US_美国_3
+    type: vless
+    server: 154.31.114.125
+    port: 443
+    uuid: 56f2048b-0670-4f92-938b-73f0280bd5e7
+    servername: navi.bankrate.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+      short-id: 2da72ce6
+  - name: 🇨🇳_CN_中国_1
+    type: trojan
+    server: 220.130.58.136
+    port: 31101
+    password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
+    tls: false
+  - name: 🇷🇺_RU_俄罗斯
+    type: vless
+    server: 78.153.139.68
+    port: 8443
+    uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
+    servername: images.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4
+      short-id: 58c512b4422e2517
+  - name: 🇺🇸_US_美国_4
+    type: vless
+    server: 144.31.1.24
+    port: 8443
+    uuid: e384913f-8863-47b4-8858-a84b68abb4a6
     network: grpc
-    servername: one-piece.com
+    servername: eh.vk.com
     tls: true
     client-fingerprint: chrome
     grpc-opts:
-      grpc-service-name: grpc
+      grpc-service-name: xyz
     reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 🇨🇦_CA_加拿大
+      public-key: qflDse4yNSmw5uo74Leu1S9lHAcP9ThsanYSkZYSPTs
+      short-id: 34a4ccbd1e2be450
+  - name: 🇨🇦_CA_加拿大_1
     type: vless
-    server: 142.171.217.19
-    port: 29028
-    uuid: 7426d51e-bb52-403d-e3bb-ef823d306766
-    servername: addons.mozilla.org
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: rwpbqas_HY8knlW0fFSIeUrjgBXHBzSNboflsLD8elA
-  - name: 🇩🇪_DE_德国_5
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 🇩🇪_DE_德国_6
-    type: vless
-    server: 5.10.214.5
+    server: 142.248.80.157
     port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 🇮🇷_IR_伊朗
-    type: vless
-    server: real-z4.sdcards1.ir
-    port: 8586
-    uuid: 303c3e8a-6057-485e-adb1-052efc265864
-    servername: tgju.org
-    tls: true
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 58yfyRJyku8oddKvCIBHz0K8LrTWKr3qTe-DMUcrWEg
-      short-id: ea0e387f2b260e0d
-  - name: 🇷🇺_RU_俄罗斯
-    type: vless
-    server: 217.12.40.76
-    port: 443
-    uuid: 4371ad14-b981-4699-bedf-83fb79bde3e6
-    servername: sun9-38.userapi.com
+    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
+    servername: apple.com
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
-      short-id: 048fe5c8be4bb687
-  - name: 🏳️_unKnow_未知
-    type: vless
-    server: khabarovsk.geodema.network
-    port: 443
-    uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-    servername: khabarovsk.geodema.network
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
-  - name: 🇩🇪_DE_德国_7
-    type: hysteria2
-    server: 89.144.35.25
-    port: 33550
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-  - name: 🇻🇪_VE_委内瑞拉
-    type: vless
-    server: ru-msk-yan-1gbit-01.sssrvpn.pro
-    port: 443
-    uuid: d684cb56-e4b8-4453-8a7b-a1ad8c81935a
-    servername: cdnv-img.perekrestok.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  - name: 🇷🇺_RU_俄罗斯_1
-    type: vless
-    server: 176.109.104.107
-    port: 443
-    uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
-    servername: sun6-21.userapi.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-      short-id: c7e42004e5f024be
-  - name: 🇰🇷_KR_韩国
-    type: ss
-    server: 168.126.234.247
-    port: 51978
-    cipher: aes-256-cfb
-    password: qwerREWQ@@
-  - name: 🇷🇺_RU_俄罗斯_2
-    type: vless
-    server: 95.174.92.156
-    port: 443
-    uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
-    servername: sun6-21.userapi.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-      short-id: c7e42004e5f024be
-  - name: 🇺🇸_US_美国_6
-    type: ss
-    server: 38.60.223.8
-    port: 989
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: 🇯🇵_JP_日本
-    type: vless
-    server: 161.248.63.15
-    port: 41579
-    uuid: f64cdd9d-57c3-45b2-e999-c46006719646
-    servername: www.icloud.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 3W_eKpL975AF7oI-mkgVtf2iK954luxwaT6C41re0RI
-      short-id: 2efb6c97c1
+      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国->🇪🇸_ES_西班牙
+      - 🇸🇦_SA_沙特阿拉伯->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - HK-220.246.190.122-5033
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 24
-      - HK-220.246.190.122-5034
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 9
-      - 🇩🇪_DE_德国
-      - 🇩🇪_DE_德国_1
-      - 🇩🇪_DE_德国_2
-      - 🇩🇪_DE_德国_3
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
       - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国
-      - 🇩🇪_DE_德国_4
+      - 未知
       - 🇨🇦_CA_加拿大
-      - 🇩🇪_DE_德国_5
-      - 🇩🇪_DE_德国_6
-      - 🇮🇷_IR_伊朗
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇭_CH_瑞士
+      - 🇷🇺_RU_俄罗斯->🇬🇧_GB_英国
+      - 未知_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_1
       - 🇷🇺_RU_俄罗斯
-      - 🏳️_unKnow_未知
-      - 🇩🇪_DE_德国_7
-      - 🇻🇪_VE_委内瑞拉
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国_6
-      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_4
+      - 🇨🇦_CA_加拿大_1
   - name: ♻️ 自动选择
     type: url-test
     proxies:
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国->🇪🇸_ES_西班牙
+      - 🇸🇦_SA_沙特阿拉伯->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - HK-220.246.190.122-5033
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 24
-      - HK-220.246.190.122-5034
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 9
-      - 🇩🇪_DE_德国
-      - 🇩🇪_DE_德国_1
-      - 🇩🇪_DE_德国_2
-      - 🇩🇪_DE_德国_3
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
       - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国
-      - 🇩🇪_DE_德国_4
+      - 未知
       - 🇨🇦_CA_加拿大
-      - 🇩🇪_DE_德国_5
-      - 🇩🇪_DE_德国_6
-      - 🇮🇷_IR_伊朗
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇭_CH_瑞士
+      - 🇷🇺_RU_俄罗斯->🇬🇧_GB_英国
+      - 未知_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_1
       - 🇷🇺_RU_俄罗斯
-      - 🏳️_unKnow_未知
-      - 🇩🇪_DE_德国_7
-      - 🇻🇪_VE_委内瑞拉
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国_6
-      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_4
+      - 🇨🇦_CA_加拿大_1
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -483,149 +331,109 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国->🇪🇸_ES_西班牙
+      - 🇸🇦_SA_沙特阿拉伯->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - HK-220.246.190.122-5033
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 24
-      - HK-220.246.190.122-5034
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 9
-      - 🇩🇪_DE_德国
-      - 🇩🇪_DE_德国_1
-      - 🇩🇪_DE_德国_2
-      - 🇩🇪_DE_德国_3
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
       - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国
-      - 🇩🇪_DE_德国_4
+      - 未知
       - 🇨🇦_CA_加拿大
-      - 🇩🇪_DE_德国_5
-      - 🇩🇪_DE_德国_6
-      - 🇮🇷_IR_伊朗
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇭_CH_瑞士
+      - 🇷🇺_RU_俄罗斯->🇬🇧_GB_英国
+      - 未知_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_1
       - 🇷🇺_RU_俄罗斯
-      - 🏳️_unKnow_未知
-      - 🇩🇪_DE_德国_7
-      - 🇻🇪_VE_委内瑞拉
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国_6
-      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_4
+      - 🇨🇦_CA_加拿大_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国->🇪🇸_ES_西班牙
+      - 🇸🇦_SA_沙特阿拉伯->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - HK-220.246.190.122-5033
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 24
-      - HK-220.246.190.122-5034
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 9
-      - 🇩🇪_DE_德国
-      - 🇩🇪_DE_德国_1
-      - 🇩🇪_DE_德国_2
-      - 🇩🇪_DE_德国_3
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
       - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国
-      - 🇩🇪_DE_德国_4
+      - 未知
       - 🇨🇦_CA_加拿大
-      - 🇩🇪_DE_德国_5
-      - 🇩🇪_DE_德国_6
-      - 🇮🇷_IR_伊朗
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇭_CH_瑞士
+      - 🇷🇺_RU_俄罗斯->🇬🇧_GB_英国
+      - 未知_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_1
       - 🇷🇺_RU_俄罗斯
-      - 🏳️_unKnow_未知
-      - 🇩🇪_DE_德国_7
-      - 🇻🇪_VE_委内瑞拉
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国_6
-      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_4
+      - 🇨🇦_CA_加拿大_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国->🇪🇸_ES_西班牙
+      - 🇸🇦_SA_沙特阿拉伯->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - HK-220.246.190.122-5033
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 24
-      - HK-220.246.190.122-5034
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 9
-      - 🇩🇪_DE_德国
-      - 🇩🇪_DE_德国_1
-      - 🇩🇪_DE_德国_2
-      - 🇩🇪_DE_德国_3
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
       - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国
-      - 🇩🇪_DE_德国_4
+      - 未知
       - 🇨🇦_CA_加拿大
-      - 🇩🇪_DE_德国_5
-      - 🇩🇪_DE_德国_6
-      - 🇮🇷_IR_伊朗
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇭_CH_瑞士
+      - 🇷🇺_RU_俄罗斯->🇬🇧_GB_英国
+      - 未知_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_1
       - 🇷🇺_RU_俄罗斯
-      - 🏳️_unKnow_未知
-      - 🇩🇪_DE_德国_7
-      - 🇻🇪_VE_委内瑞拉
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国_6
-      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_4
+      - 🇨🇦_CA_加拿大_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国->🇪🇸_ES_西班牙
+      - 🇸🇦_SA_沙特阿拉伯->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - HK-220.246.190.122-5033
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 24
-      - HK-220.246.190.122-5034
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 9
-      - 🇩🇪_DE_德国
-      - 🇩🇪_DE_德国_1
-      - 🇩🇪_DE_德国_2
-      - 🇩🇪_DE_德国_3
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
       - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国
-      - 🇩🇪_DE_德国_4
+      - 未知
       - 🇨🇦_CA_加拿大
-      - 🇩🇪_DE_德国_5
-      - 🇩🇪_DE_德国_6
-      - 🇮🇷_IR_伊朗
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇭_CH_瑞士
+      - 🇷🇺_RU_俄罗斯->🇬🇧_GB_英国
+      - 未知_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_1
       - 🇷🇺_RU_俄罗斯
-      - 🏳️_unKnow_未知
-      - 🇩🇪_DE_德国_7
-      - 🇻🇪_VE_委内瑞拉
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国_6
-      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_4
+      - 🇨🇦_CA_加拿大_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -648,38 +456,28 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇪🇸_ES_西班牙
+      - 🇺🇸_US_美国->🇪🇸_ES_西班牙
+      - 🇸🇦_SA_沙特阿拉伯->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - HK-220.246.190.122-5033
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 24
-      - HK-220.246.190.122-5034
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet
-        - 9
-      - 🇩🇪_DE_德国
-      - 🇩🇪_DE_德国_1
-      - 🇩🇪_DE_德国_2
-      - 🇩🇪_DE_德国_3
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
       - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国
-      - 🇩🇪_DE_德国_4
+      - 未知
       - 🇨🇦_CA_加拿大
-      - 🇩🇪_DE_德国_5
-      - 🇩🇪_DE_德国_6
-      - 🇮🇷_IR_伊朗
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇭_CH_瑞士
+      - 🇷🇺_RU_俄罗斯->🇬🇧_GB_英国
+      - 未知_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_1
       - 🇷🇺_RU_俄罗斯
-      - 🏳️_unKnow_未知
-      - 🇩🇪_DE_德国_7
-      - 🇻🇪_VE_委内瑞拉
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国_6
-      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_4
+      - 🇨🇦_CA_加拿大_1
 rule-providers:
   LocalAreaNetwork:
     type: http
